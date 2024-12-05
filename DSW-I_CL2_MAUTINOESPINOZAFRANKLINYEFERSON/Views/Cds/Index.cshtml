@@ -1,0 +1,25 @@
+﻿@model IEnumerable<DSW_I_CL2_MAUTINOESPINOZAFRANKLINYEFERSON.Models.CalcularMautino>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Cliente</th>
+            <th>Capacidad Disco (GB)</th>
+            <th>Capacidad CD (MB)</th>
+            <th>Total CDs</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Idcd</td>
+                <td>@item.Cliente</td>
+                <td>@item.CapaDiscoGB</td>
+                <td>@item.CapaCdMB</td>
+                <td>@item.TotalCds</td>
+            </tr>
+        }
+    </tbody>
+</table>
